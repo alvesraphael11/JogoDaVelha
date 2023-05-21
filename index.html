@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <title>#JogoDaVelha</title>
+</head>
+<body>
+    <div id="leftSide">
+        <h1><span id="hashtag">#</span>JogoDaVelha</h1>
+        <div id="gameInfos">
+            <div id="player1div">
+                <label for="player1Input">X</label>
+                <input type="text" id="player1Input" required placeholder="Nome do jogador 1">
+            </div>
+            <div id="player2div">
+                <label for="player2Input">O</label>
+                <input type="text" id="player2Input" required placeholder="Nome do jogador 2">
+            </div>
+            <div id="startButtonDiv"><button id="startBtn">Começar</button></div>
+            <div id="gameInfosDiv">
+                <p id="startP">Preencha o nome dos jogadores e clique em começar.</p>
+                <p id="turnPlayerP"></p>
+            </div>
+        </div>
+    </div>
+    <section id="gameBoard">
+        <span data-region="0.0"></span>
+        <span data-region="0.1"></span>
+        <span data-region="0.2"></span>
+        <span data-region="1.0"></span>
+        <span data-region="1.1"></span>
+        <span data-region="1.2"></span>
+        <span data-region="2.0"></span>
+        <span data-region="2.1"></span>
+        <span data-region="2.2"></span>
+    </section>
+    <script src="index.js"></script>
+    <footer>Criado por Raphael Alves</footer>
+</body>
+</html>

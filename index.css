@@ -1,0 +1,347 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100vh;
+    width: 100vw;
+    padding: 15px;
+    background-image: linear-gradient(to bottom, #005C53, #042940);
+    color: #f3f725;
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Quicksand', sans-serif;
+    transition: 0.3s;
+}
+
+h1 {
+    font-family: 'Righteous', cursive;
+}
+
+#hashtag {
+    font-family: 'Bruno Ace', cursive;
+    font-weight: 600;
+    font-size: 45px;
+    color: #042940;
+}
+
+#gameInfos {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 15px;
+    background-color: #042940;
+    border-radius: 7px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.349);
+    width: 300px;
+    margin: 20px auto 35px auto;
+    padding: 15px;
+    display: grid;
+    grid-template-areas: "item1 item1 item1 item3"
+    "item2 item2 item2 item3"
+    "item4 item4 item4 item4";
+}
+
+#gameInfos input {
+    font-size: 15px;
+    background-color: #042940;
+    color: #f3f725;
+    border: 1px solid #f3f725;
+    border-radius: 6px;
+    padding-left: 5px;
+    margin-left: 5px;
+    width: 100px;
+}
+
+textarea:focus, input:focus {
+    outline: none;
+}
+
+#gameInfos ::-webkit-input-placeholder {
+    color: #f4f72565;
+}
+
+#gameInfos button {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: #042940;
+    color: #f3f725;
+    border: 1px solid #f3f725;
+    border-radius: 7px;
+    padding: 15px 22px;
+    transition: 0.3s;
+}
+
+#gameInfos button:hover {
+    box-shadow: 2px 2px 2px #f4f7255d;
+    text-shadow: 3px 3px 10px #f4f725;
+}
+
+#player1div {
+    grid-area: item1;
+    font-weight: bold;
+    margin: 2px;
+}
+
+#player2div {
+    grid-area: item2;
+    font-weight: bold;
+    margin: 2px;
+}
+
+#startButtonDiv {
+    grid-area: item3;
+}
+
+#gameInfosDiv{
+    grid-area: item4;
+    margin: 5% 0% -1%;
+}
+
+#startP {
+    display: block;
+}
+
+#turnPlayerP {
+    display: none;
+}
+
+#turnPlayerSpan {
+    font-weight: bold;
+}
+
+#gameBoard {
+    background-color: #f3f725;
+    display: grid;
+    grid-template-columns: 87px 87px 87px;
+    grid-template-rows: 87px 87px 87px;
+    gap: 5px;
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    border: 15px solid #005C53;
+    border-radius: 7px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.349);
+    transition: 0.3s;
+}
+
+#gameBoard span {
+    margin-left: -1px;
+    margin-top: -1px;
+    background-color: #005C53;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 70px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.win {
+    color: #f3f725;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+}
+
+@media (orientation: landscape) {
+
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #leftSide {
+        margin: auto;
+        float: left;
+    }
+    
+    #gameInfos {
+        font-size: 15px;
+        width: 280px;
+        display: block;
+    }
+
+    #gameInfos input {
+        width: auto;
+        padding: 7px 7px;
+        margin: 2px 0px 2px 5px;
+    }
+
+    label {
+        margin-right: 10px;
+    }
+    
+    #gameInfos button {
+        padding: 7px 0px;
+        background-color: #005C53;
+        border: none;
+        color: #f3f725;
+        width: 240px;
+        margin: 2px 0px;
+        transition: 0.3s;
+    }
+    
+    #gameBoard {
+        float: right;
+        grid-template-columns: 81px 81px 81px;
+        grid-template-rows: 81px 81px 81px;
+        gap: 5px;
+        width: 280px;
+        height: 280px;
+        align-self: center;
+    }
+}
+
+@media (min-width: 414px) and (orientation: portrait) {
+    #gameInfos {
+        font-size: 20px;
+        width: 360px;
+    }
+    
+    #gameInfos input {
+        font-size: 20px;
+        padding-left: 5px;
+        margin-left: 5px;
+        width: 155px;
+    }
+    
+    #gameInfos button {
+        font-size: 20px;
+    }
+    
+    #gameInfosDiv{
+        grid-area: item4;
+        margin: 3% 0% -1%;
+    }
+    
+    #gameBoard {
+        grid-template-columns: 110px 110px 110px;
+        grid-template-rows: 110px 110px 110px;
+        gap: 7px;
+        width: 360px;
+        height: 360px;
+        border: 15px solid #005C53;
+    }
+    
+    #gameBoard span {
+        font-size: 70px;
+    }
+    
+    .win {
+        color: #f3f725;
+    }
+    
+    footer{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        padding: 10px;
+    }
+
+}
+
+@media (min-width: 895px) and (orientation: landscape) {
+
+    #gameInfos {
+        font-size: 20px;
+        width: 330px;
+    }
+
+    h1, #hashtag {
+        font-size: 48px;
+    }
+
+    #gameInfos input {
+        font-size: 20px;
+    }
+    
+    #gameInfos button {
+        font-size: 20px;
+        width: 296px;
+    }
+    
+    #gameBoard {
+        grid-template-columns: 96px 96px 96px;
+        grid-template-rows: 96px 96px 96px;
+        gap: 7px;
+        width: 330px;
+        height: 330px;
+        margin-bottom: 50px;
+    }
+}
+
+@media (min-width: 895px) and (orientation: landscape) {
+
+    #gameInfos {
+        font-size: 20px;
+        width: 330px;
+    }
+
+    h1, #hashtag {
+        font-size: 48px;
+    }
+
+    #gameInfos input {
+        font-size: 20px;
+    }
+    
+    #gameInfos button {
+        font-size: 20px;
+        width: 296px;
+    }
+    
+    #gameBoard {
+        grid-template-columns: 96px 96px 96px;
+        grid-template-rows: 96px 96px 96px;
+        gap: 7px;
+        width: 330px;
+        height: 330px;
+        margin: 11%;
+    }
+}
+
+@media (min-width: 1200px) and (orientation: landscape) {
+
+    #gameInfos {
+        font-size: 30px;
+        width: 500px;
+        padding: 25px;
+    }
+
+    h1, #hashtag {
+        font-size: 78px;
+    }
+
+    #gameInfos input {
+        font-size: 30px;
+    }
+    
+    #gameInfos button {
+        font-size: 30px;
+        width: 436px;
+    }
+    
+    #gameBoard {
+        grid-template-columns: 151px 151px 151px;
+        grid-template-rows: 151px 151px 151px;
+        gap: 10px;
+        width: 500px;
+        height: 500px;
+    }
+    
+    #gameBoard span {
+        font-size: 100px;
+    }
+
+    footer {
+        font-size: 30px;
+    }
+}
