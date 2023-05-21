@@ -18,22 +18,23 @@ body, html {
 
 h1 {
     font-family: 'Righteous', cursive;
+    font-size: 50px;
 }
 
 #hashtag {
     font-family: 'Bruno Ace', cursive;
     font-weight: 600;
-    font-size: 45px;
+    font-size: 50px;
     color: #042940;
 }
 
 #gameInfos {
     font-family: 'Quicksand', sans-serif;
-    font-size: 15px;
+    font-size: 19px;
     background-color: #042940;
     border-radius: 7px;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.349);
-    width: 300px;
+    width: 340px;
     margin: 20px auto 35px auto;
     padding: 15px;
     display: grid;
@@ -50,7 +51,8 @@ h1 {
     border-radius: 6px;
     padding-left: 5px;
     margin-left: 5px;
-    width: 100px;
+    width: 160px;
+    height: 25px;
 }
 
 textarea:focus, input:focus {
@@ -62,6 +64,7 @@ textarea:focus, input:focus {
 }
 
 #gameInfos button {
+    margin-top: 2px;
     font-family: 'Quicksand', sans-serif;
     font-size: 15px;
     cursor: pointer;
@@ -69,7 +72,8 @@ textarea:focus, input:focus {
     color: #f3f725;
     border: 1px solid #f3f725;
     border-radius: 7px;
-    padding: 15px 22px;
+    padding: 17px 0px;
+    width: 110px;
     transition: 0.3s;
 }
 
@@ -96,7 +100,7 @@ textarea:focus, input:focus {
 
 #gameInfosDiv{
     grid-area: item4;
-    margin: 5% 0% -1%;
+    margin: 3% 0% -1%;
 }
 
 #startP {
@@ -114,11 +118,11 @@ textarea:focus, input:focus {
 #gameBoard {
     background-color: #f3f725;
     display: grid;
-    grid-template-columns: 87px 87px 87px;
-    grid-template-rows: 87px 87px 87px;
-    gap: 5px;
-    width: 300px;
-    height: 300px;
+    grid-template-columns: 99px 99px 99px;
+    grid-template-rows: 99px 99px 99px;
+    gap: 7px;
+    width: 340px;
+    height: 340px;
     margin: auto;
     border: 15px solid #005C53;
     border-radius: 7px;
