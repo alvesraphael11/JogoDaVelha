@@ -6,7 +6,7 @@
 
 body {
     width: 100vw;
-    height: 100%;
+    height: 100vh;
     padding: 15px 15px 0px 15px;
     background-image: linear-gradient(to bottom, #005C53, #042940);
     color: #f3f725;
@@ -165,7 +165,6 @@ footer a:hover {
 @media (orientation: landscape) {
 
     body {
-        height: 100vh;
         display: flex;
         align-items: center;
         justify-content: center;
