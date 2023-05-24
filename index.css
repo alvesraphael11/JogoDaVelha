@@ -4,10 +4,10 @@
     box-sizing: border-box;
 }
 
-body, html {
-    height: 100vh;
+body {
     width: 100vw;
-    padding: 15px;
+    height: 100%;
+    padding: 15px 15px 0px 15px;
     background-image: linear-gradient(to bottom, #005C53, #042940);
     color: #f3f725;
     text-align: center;
@@ -147,19 +147,35 @@ textarea:focus, input:focus {
     color: #f3f725;
 }
 
-footer{
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    padding: 10px;
+footer {
+    margin: 15px 0px 5px 0px;
+}
+
+footer a {
+    transition: 0.3s;
+    text-decoration: none;
+    color: #f3f725;
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: #e8e99f;
 }
 
 @media (orientation: landscape) {
 
     body {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #landscapeArea {
         display: flex;
         align-items: center;
         justify-content: space-between;
+        gap: 55px;
     }
 
     #leftSide {
@@ -194,13 +210,13 @@ footer{
     }
     
     #gameBoard {
+        transform: translateY(2%);
         float: right;
         grid-template-columns: 81px 81px 81px;
         grid-template-rows: 81px 81px 81px;
         gap: 5px;
         width: 280px;
         height: 280px;
-        align-self: center;
     }
 }
 
@@ -242,14 +258,6 @@ footer{
     .win {
         color: #f3f725;
     }
-    
-    footer{
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-        padding: 10px;
-    }
-
 }
 
 @media (min-width: 895px) and (orientation: landscape) {
@@ -265,6 +273,7 @@ footer{
 
     #gameInfos input {
         font-size: 20px;
+        width: 257px !important;
     }
     
     #gameInfos button {
@@ -295,6 +304,8 @@ footer{
 
     #gameInfos input {
         font-size: 20px;
+        height: 38px;
+        width: 386px;
     }
     
     #gameInfos button {
@@ -308,11 +319,15 @@ footer{
         gap: 7px;
         width: 330px;
         height: 330px;
-        margin: 11%;
+        margin: 0% 11% 5% 0%;
     }
 }
 
 @media (min-width: 1200px) and (orientation: landscape) {
+
+    #landscapeArea {
+        gap: 70px;
+    }
 
     #gameInfos {
         font-size: 30px;
@@ -326,6 +341,7 @@ footer{
 
     #gameInfos input {
         font-size: 30px;
+        width: 390px !important;
     }
     
     #gameInfos button {
