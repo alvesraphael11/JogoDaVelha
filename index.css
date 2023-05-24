@@ -149,6 +149,7 @@ textarea:focus, input:focus {
 
 footer {
     margin: 15px 0px 5px 0px;
+    background-color: #042940;
 }
 
 footer a {
