@@ -104,12 +104,14 @@ textarea:focus, input:focus {
     grid-area: item1;
     font-weight: bold;
     margin: 2px;
+    font-family: 'Nunito', sans-serif;
 }
 
 #player2div {
     grid-area: item2;
     font-weight: bold;
     margin: 2px;
+    font-family: 'Nunito', sans-serif;
 }
 
 #startButtonDiv {
@@ -152,9 +154,9 @@ textarea:focus, input:focus {
     margin-left: -1px;
     margin-top: -1px;
     background-color: #1F2140;
-    font-family: 'Varela Round', sans-serif;
-    font-size: 70px;
-    font-weight: bold;
+    font-family: 'Nunito', sans-serif;
+    font-size:85px;
+    font-weight: 500;
     cursor: pointer;
     display: flex;
     justify-content: center;
