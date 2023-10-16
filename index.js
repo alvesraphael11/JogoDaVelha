@@ -42,8 +42,8 @@ function disableGameBoard() {
 function handleWin(regions) {
     disableGameBoard()
     regions.forEach(function (region) {
-        gameBoard.style.color = '#042940'
-        gameBoard.style.backgroundColor = '#042940'
+        gameBoard.style.color = '#aba9c2'
+        gameBoard.style.backgroundColor = '#aba9c2'
         document.querySelector('[data-region="' + region + '"]').classList.add('win')
         turnPlayerP.innerHTML = `<span id="turnPlayerSpan">${playerTurn.value} venceu!</span>`
     })
