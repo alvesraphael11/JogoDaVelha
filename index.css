@@ -144,6 +144,43 @@ textarea:focus, input:focus {
     font-weight: bold;
 }
 
+#scoreTableDiv {
+    background-color: #1F2140;
+    border-radius: 7px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.349);
+    width: 340px;
+    margin: 20px auto 35px auto;
+    padding: 15px;
+}
+
+#scoreTable {
+    font-family: 'Quicksand', sans-serif;
+    width: 100%;
+    font-size: 15px;
+    border-collapse: collapse;
+}
+
+#scoreTable td{
+    padding: 2px 0px;
+}
+#scoreTable th {
+    padding: 7px 0px;
+}
+
+#scoreTable tr:hover {
+    background-color: #272a50;
+}
+
+.leftDataTable {
+    text-align: left;
+}
+
+.rightDataTable {
+    text-align: center;
+    color: #f4f725;
+    font-weight: bold;
+}
+
 #gameBoard {
     grid-area: gameBoard;
     background-color: #f3f725;
@@ -235,6 +272,14 @@ footer a:hover {
     #startP {
         font-size: 13px;
     }
+
+    #scoreTableDiv {
+        width: 280px;
+    }
+    
+    #scoreTable {
+        font-size: 13px;
+    }
     
     #gameBoard {
         grid-template-columns: 75px 75px 75px;
@@ -247,7 +292,6 @@ footer a:hover {
     }
 
     footer {
-        color: yellow;
         font-size: 80%;
     }
 }
