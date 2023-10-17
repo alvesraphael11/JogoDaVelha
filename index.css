@@ -39,7 +39,6 @@ h1 {
     font-family: 'Righteous', cursive;
     font-size: 50px;
     color: #f3f725;
-    color: red;
 }
 
 #leftSide {
@@ -245,5 +244,9 @@ footer a:hover {
     
     #gameBoard span {
         font-size:55px;
+    }
+
+    footer {
+        font-size: 90%;
     }
 }
