@@ -247,6 +247,7 @@ footer a:hover {
     }
 
     footer {
-        font-size: 90%;
+        color: yellow;
+        font-size: 80%;
     }
 }
