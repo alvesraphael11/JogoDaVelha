@@ -10,14 +10,22 @@ body {
     align-items: center;
     width: 100vw;
     min-height: 100vh;
-    background-image: url(images/background.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
     color: #aba9c2;
     text-align: center;
     font-size: 18px;
     font-family: 'Quicksand', sans-serif;
     transition: 0.3s;
+}
+
+#img1 {
+    background-image: url(images/background.jpg);
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    top: 0;
+    z-index: -1;
 }
 
 #totalArea {
@@ -188,5 +196,53 @@ footer a:hover {
     #totalArea {
         grid-template-areas: "leftSide"
         "gameBoard";
+    }
+}
+
+@media (max-width: 850px) and (orientation: landscape) {
+    #totalArea {
+        grid-template-areas: "leftSide gameBoard";
+    }
+    
+    h1 {
+        font-size: 35px;
+    }
+    
+    #hashtag {
+        font-size: 35px;
+    }
+    
+    #gameInfos {
+        font-size: 15px;
+        width: 280px;
+    }
+    
+    #gameInfos input {
+        font-size: 13px;
+        padding-left: 5px;
+        margin-left: 5px;
+        width: 130px;
+        height: 23px;
+    }
+    
+    #gameInfos button {
+        margin-top: 2px;
+        font-size: 13px;
+        padding: 16px 0px;
+        width: 80px;
+    }
+
+    #startP {
+        font-size: 13px;
+    }
+    
+    #gameBoard {
+        grid-template-columns: 75px 75px 75px;
+        grid-template-rows: 75px 75px 75px;
+        gap: 5px;
+    }
+    
+    #gameBoard span {
+        font-size:55px;
     }
 }
