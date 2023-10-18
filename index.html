@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900;1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>#JogoDaVelha</title>
 </head>
 <body>
@@ -36,6 +37,11 @@
                 </div>
             </div>
             <div id="scoreTableDiv">
+                <div id="showHideScore">
+                    <span class="material-symbols-outlined" id="hideScoreArrow" onclick="showHideScoreFunction()">expand_less</span>
+                    <p id="showHideScoreLink" onclick="showHideScoreFunction()">Ver placar</p>
+                    <span class="material-symbols-outlined" id="showScoreArrow" onclick="showHideScoreFunction()">expand_more</span>
+                </div>
                 <table id="scoreTable">
                     <tr>
                         <th class="leftDataTable">Jogador</th>
@@ -43,18 +49,18 @@
                     </tr>
                     <tr>
                         <td class="leftDataTable
-                            ">Raphael</td>
-                        <td class="rightDataTable">3</td>
+                            " id="player1TableName">Jogador 1</td>
+                        <td class="rightDataTable" id="player1VictoriesTable">0</td>
                     </tr>
                     <tr>
                         <td class="leftDataTable
-                            ">Pedro</td>
-                        <td class="rightDataTable">7</td>
+                            " id="player2TableName">Jogador 2</td>
+                        <td class="rightDataTable" id="player2VictoriesTable">0</td>
                     </tr>
                     <tr>
                         <td class="leftDataTable
                             ">Empates</td>
-                        <td class="rightDataTable">5</td>
+                        <td class="rightDataTable" id="tiesTable">0</td>
                     </tr>
                 </table>
             </div>
