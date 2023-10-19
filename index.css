@@ -145,7 +145,7 @@ textarea:focus, input:focus {
 }
 
 #scoreTableDiv {
-    background-color: #1F2140;
+    background-color: red;
     border-radius: 7px;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.349);
     width: 100%;
@@ -232,8 +232,6 @@ textarea:focus, input:focus {
 }
 
 #gameBoard span {
-    margin-left: -1px;
-    margin-top: -1px;
     background-color: #1F2140;
     font-family: 'Nunito', sans-serif;
     font-size:85px;
